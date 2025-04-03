@@ -241,3 +241,9 @@ nav ul li a {
     width: 300px;
     text-align: left;
 } 
+footer {
+    text-align: center;
+    padding: 1px;
+    background-color: #252445;
+    color: #777;
+}
