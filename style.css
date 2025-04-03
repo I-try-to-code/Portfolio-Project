@@ -12,6 +12,13 @@ nav {
     align-items: center;
     padding: 20px;
     margin: 0 auto;
+    background-color: #14132b;  
+    position: fixed;  
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;  
+    padding-right: 20px;
 }
 
 nav h1 {
@@ -30,6 +37,21 @@ nav ul li a {
     text-decoration: none;
 }
 
+ .social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons-img {
+    width: 34px;
+    height: 34px;
+    filter: invert(1);  
+    transition: transform 0.2s ease-in-out;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
 .padding 
 {
     padding: 100px;
@@ -192,3 +214,30 @@ nav ul li a {
     color: #9c5eff;
     font-family: Georgia, sans-serif;
 }   
+
+
+.contact {
+    text-align: left;
+    padding: 100px;
+    padding-top: 90px;
+    padding-bottom: 50px;
+}
+.contact h2 
+{
+    color: #9c5eff;
+    font-family: Georgia, sans-serif;
+}
+.contact_contain
+{
+    display: flex;
+    justify-content:center;
+    justify-content:space-evenly;
+}
+.contact_card
+{
+    background-color: #252445;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: left;
+} 
