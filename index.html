@@ -1,135 +1,529 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ayan Gattani</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ayan Gattani - Computer Science Engineering Student specializing in AI/ML, Software Engineering, and Intelligent Systems at VIT Vellore.">
+  <meta name="keywords" content="Ayan Gattani, AI Engineer, Machine Learning Engineer, Software Engineer, Backend Engineer, FastAPI, Python, IoT, VIT Vellore, RoboVITics">
+  <meta name="author" content="Ayan Gattani">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%232563EB'/><text x='50' y='68' font-size='50' font-weight='900' fill='white' font-family='sans-serif' text-anchor='middle'>AG</text></svg>">
+
+  <!-- OpenGraph Metadata -->
+  <meta property="og:title" content="Ayan Gattani | AI & Software Engineer">
+  <meta property="og:description" content="Building intelligent systems that solve real problems. B.Tech CSE (IoT) @ VIT Vellore. Focus on AI/ML & Backend Microservices.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ayangattani.dev">
+
+  <!-- Twitter Card Metadata -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Ayan Gattani | AI & Software Engineer">
+  <meta name="twitter:description" content="Building intelligent systems that solve real problems. B.Tech CSE (IoT) @ VIT Vellore.">
+
+  <title>Ayan Gattani | AI & Software Engineer</title>
+
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Structured JSON-LD Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ayan Gattani",
+    "jobTitle": "AI & Software Engineer",
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "VIT Vellore"
+    },
+    "knowsAbout": ["Artificial Intelligence", "Machine Learning", "FastAPI", "Python", "Software Engineering", "Backend Microservices", "IoT"],
+    "worksFor": {
+      "@type": "Organization",
+      "name": "IMMO Infotech"
+    }
+  }
+  </script>
 </head>
 <body>
 
-    <!-- Header Section for my website-->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#about">About me</a></li>
-                <li><a href="#skill">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
+  <!-- HEADER / NAVIGATION -->
+  <header class="site-header" id="main-header">
+    <div class="container header-container">
+      <a href="#hero" class="logo-brand" aria-label="Ayan Gattani Home Page">
+        <span>Ayan Gattani</span>
+      </a>
+
+      <nav class="nav-container" id="nav-menu-container" aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#leadership" class="nav-link">Leadership</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#impact" class="nav-link">Impact</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline icon-only-btn" title="GitHub Profile" aria-label="GitHub Profile">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+        </a>
+
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline icon-only-btn" title="LinkedIn Profile" aria-label="LinkedIn Profile">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+        </a>
+
+        <button class="btn btn-primary btn-sm" data-action="resume" aria-label="Preview or download resume">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+          <span>Resume</span>
+        </button>
+
+        <button class="mobile-toggle" id="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- 1. HERO SECTION -->
+  <section id="hero" class="hero-section">
+    <div class="container hero-grid">
+      <div class="hero-content reveal-on-scroll">
+        <div class="hero-position-badge">
+          <span class="pulse-dot"></span>
+          <span>B.Tech CSE (IoT) @ VIT Vellore</span>
+        </div>
+
+        <h1 class="hero-headline">
+          Building <span class="headline-gradient">intelligent systems</span> that solve real problems.
+        </h1>
+
+        <p class="hero-subtext">
+          Computer Science Engineering student specializing in <strong>AI/ML</strong> and <strong>Software Engineering</strong>. Experienced in building end-to-end applications, production REST APIs, and leading large-scale technical operations.
+        </p>
+
+        <!-- 10-Second Recruiter Snapshot Card -->
+        <div class="recruiter-snapshot-card">
+          <div class="snapshot-header">
+            <span class="snapshot-tag">CANDIDATE PROFILE AT-A-GLANCE</span>
+          </div>
+          <div class="snapshot-grid">
+            <div class="snapshot-item">
+              <span class="snap-lbl">Target Roles:</span>
+              <span class="snap-val">AI Engineer · ML Engineer · Software Engineer · Backend Engineer</span>
+            </div>
+            <div class="snapshot-item">
+              <span class="snap-lbl">Industry Intern:</span>
+              <span class="snap-val">Software Engineering Intern @ IMMO Infotech</span>
+            </div>
+            <div class="snapshot-item">
+              <span class="snap-lbl">Leadership Role:</span>
+              <span class="snap-val">Head of Finance & Logistics @ RoboVITics (₹11L Budget, ₹8.3L Sponsors)</span>
+            </div>
+            <div class="snapshot-item">
+              <span class="snap-lbl">Core Tech Stack:</span>
+              <span class="snap-val">Python, FastAPI, PostgreSQL, Scikit-Learn, PyTorch, C++, REST APIs</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-cta-group" style="margin-top: 1.75rem;">
+          <a href="#projects" class="btn btn-primary">
+            <span>Explore Hero Projects</span>
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            <span>GitHub Profile</span>
+          </a>
+
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+            <span>LinkedIn Profile</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Interactive Canvas Visualizer -->
+      <div class="hero-visual-card reveal-on-scroll">
+        <div class="visual-header">
+          <span class="visual-title-tag">SYSTEM INFERENCE PIPELINE</span>
+          <span class="visual-status">STATUS: ONLINE</span>
+        </div>
+
+        <div class="canvas-container">
+          <canvas id="hero-canvas" aria-label="Interactive AI system inference pipeline node graph"></canvas>
+        </div>
+
+        <div class="visual-footer-bar">
+          <span>Click node to pulse signal</span>
+          <span>Inference Latency: &lt; 12ms</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. ABOUT SECTION -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header reveal-on-scroll">
+        <span class="section-tag">About Me</span>
+        <h2 class="section-title">Computer Science Engineer & Technical Leader</h2>
+      </div>
+
+      <div class="about-card-wrapper reveal-on-scroll">
+        <div class="about-profile-box">
+          <div class="profile-image-container">
+            <img src="assets/images/profile.png" alt="Ayan Gattani - Computer Science Student at VIT Vellore" class="profile-img" decoding="async">
+          </div>
+          <h3 class="profile-name">Ayan Gattani</h3>
+          <p class="profile-degree">B.Tech CSE (IoT Specialization)</p>
+          <p class="profile-univ">VIT Vellore</p>
+        </div>
+
+        <div class="about-narrative">
+          <p class="about-p">
+            I am a Computer Science Engineering student specializing in IoT at <strong>VIT Vellore</strong>, pursuing a career direction centered on <strong>AI/ML Engineering</strong> and <strong>Software Engineering</strong>.
+          </p>
+
+          <p class="about-p">
+            My work focuses on building full-stack intelligent applications, high-throughput backend microservices, healthcare AI assistants, and hardware-software IoT integrations. Rather than building theoretical prototypes, I emphasize shipping functional, scalable systems.
+          </p>
+
+          <p class="about-p">
+            Outside the classroom, I served as <strong>Head of Finance & Logistics</strong> and <strong>Senior Core Member</strong> at <strong>RoboVITics</strong>, where I managed an ₹11 Lakh budget, secured ₹8.3 Lakh in corporate sponsorships, automated cold-outreach pipelines, and coordinated national robotics events.
+          </p>
+
+          <div class="about-pillars">
+            <div class="pillar-item">
+              <span class="pillar-title">AI & ML Systems</span>
+              <span class="pillar-desc">Computer Vision, LLM summarization, recommendation engines, predictive ML pipelines.</span>
+            </div>
+            <div class="pillar-item">
+              <span class="pillar-title">Software Engineering</span>
+              <span class="pillar-desc">FastAPI microservices, REST APIs, PostgreSQL databases, clean architecture.</span>
+            </div>
+            <div class="pillar-item">
+              <span class="pillar-title">Operations & Leadership</span>
+              <span class="pillar-desc">Managed ₹11L budget, ₹8.3L sponsorships, 60+ member team coordination.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. PROJECTS SECTION -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-header reveal-on-scroll">
+        <span class="section-tag">Engineering Portfolio</span>
+        <h2 class="section-title">Systems & AI Projects</h2>
+        <p class="section-subtitle">Structured technical case studies communicating exact problem definitions, architectural approaches, code stack, trade-offs, and validated results.</p>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="project-filter-bar reveal-on-scroll" id="project-filter-tabs" role="tablist" aria-label="Filter project categories">
+        <button class="filter-tab active" data-category="all" role="tab" aria-selected="true">All Systems</button>
+        <button class="filter-tab" data-category="ai-ml" role="tab" aria-selected="false">AI & Machine Learning</button>
+        <button class="filter-tab" data-category="backend" role="tab" aria-selected="false">Backend & APIs</button>
+        <button class="filter-tab" data-category="iot" role="tab" aria-selected="false">IoT & Embedded</button>
+      </div>
+
+      <!-- HERO PROJECTS -->
+      <div class="hero-projects-wrapper reveal-on-scroll" id="hero-projects-container">
+        <!-- Rendered dynamically -->
+      </div>
+
+      <!-- SECONDARY SYSTEMS GRID -->
+      <div class="reveal-on-scroll">
+        <h3 class="sub-section-title">Secondary Engineering Systems</h3>
+        <div class="secondary-projects-grid" id="secondary-projects-grid">
+          <!-- Rendered dynamically -->
+        </div>
+      </div>
+
+      <!-- MORE PROJECTS DIRECTORY -->
+      <div class="reveal-on-scroll">
+        <h3 class="sub-section-title">Additional Engineering Tools & Prototypes</h3>
+        <div class="additional-projects-wrapper">
+          <div class="additional-projects-grid" id="additional-projects-list">
+            <!-- Rendered dynamically -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. EXPERIENCE SECTION -->
+  <section id="experience">
+    <div class="container">
+      <div class="section-header reveal-on-scroll">
+        <span class="section-tag">Engineering Experience</span>
+        <h2 class="section-title">Professional Timeline</h2>
+        <p class="section-subtitle">Real-world software engineering internship and technical systems deployment.</p>
+      </div>
+
+      <div class="timeline-wrapper">
+        <div class="timeline-line"></div>
+
+        <!-- Timeline Item 1 -->
+        <div class="timeline-item reveal-on-scroll">
+          <div class="timeline-node"></div>
+          <div class="timeline-content-card">
+            <div class="experience-header">
+              <div>
+                <h3 class="exp-role">Software Engineering Intern</h3>
+                <div class="exp-company">IMMO Infotech</div>
+              </div>
+              <span class="exp-period-badge">May 11, 2026 – July 6, 2026</span>
+            </div>
+            <p class="exp-description">
+              Engaged in backend microservices engineering, production software features, data query optimization, and collaborative system architecture routines.
+            </p>
+            <ul class="exp-highlights-list">
+              <li>
+                <span class="bullet-icon" aria-hidden="true"></span>
+                <span>Designed and integrated modular backend REST API endpoints for application core logic.</span>
+              </li>
+              <li>
+                <span class="bullet-icon" aria-hidden="true"></span>
+                <span>Optimized database queries and data serialization layers, reducing service response latency.</span>
+              </li>
+              <li>
+                <span class="bullet-icon" aria-hidden="true"></span>
+                <span>Participated in agile code reviews, system debugging, and test coverage expansion.</span>
+              </li>
             </ul>
-            <div class="social-icons">
-                <a href="https://github.com/I-try-to-code" target="_blank">
-                    <img  class="social-icons-img" src="./assets/svgs/github.png" alt="GitHub">
-                </a>
-                <a href="https://www.linkedin.com/in/ayan-gattani/" target="_blank">
-                    <img class="social-icons-img" src="./assets/svgs/linkedin.png" alt="LinkedIn">
-                </a>
-                <img src="assets/svgs/image.png">
-                 
-                
-                
+            <div class="card-tech-pills">
+              <span class="tech-pill">Java</span>
+              <span class="tech-pill">Python</span>
+              <span class="tech-pill">REST APIs</span>
+              <span class="tech-pill">SQL</span>
+              <span class="tech-pill">Backend Architecture</span>
             </div>
-            
-        </nav>
-    </header>
-<!-- Hero sectioj for my website-->
-    <div class="hero">
-            <div class="hero-text">
-                <h2>Hello, I'm</h2>
-                <h1>Ayan Gattani</h1>
-                <p>An Robotics and Technology Enthusiast</p>
-                <br>
-                <a href="#about"><button class="btn">About me</button></a>
-                <a href="#projects"><button class="btn-outline">Projects</button></a>
+          </div>
+        </div>
+
+        <!-- Timeline Item 2 -->
+        <div class="timeline-item reveal-on-scroll">
+          <div class="timeline-node"></div>
+          <div class="timeline-content-card">
+            <div class="experience-header">
+              <div>
+                <h3 class="exp-role">Technical Operations & Systems Lead</h3>
+                <div class="exp-company">RoboVITics — VIT Vellore</div>
+              </div>
+              <span class="exp-period-badge">2023 – Present</span>
             </div>
-            <div class="hero-image">
-                <img src="./formal_pic-removebg-preview (1).png" alt="pradnya">
+            <p class="exp-description">
+              Spearheaded internal technical automation, deployed link shortening infrastructure, and automated sponsorship outreach pipelines.
+            </p>
+            <ul class="exp-highlights-list">
+              <li>
+                <span class="bullet-icon" aria-hidden="true"></span>
+                <span>Engineered custom production URL shortener service with 7 backend API endpoints used by 100+ active members.</span>
+              </li>
+              <li>
+                <span class="bullet-icon" aria-hidden="true"></span>
+                <span>Built Python sponsor outreach automation tools that facilitated securing ₹8.3 Lakhs in corporate sponsorship.</span>
+              </li>
+            </ul>
+            <div class="card-tech-pills">
+              <span class="tech-pill">Python</span>
+              <span class="tech-pill">Node.js</span>
+              <span class="tech-pill">API Design</span>
+              <span class="tech-pill">Automation</span>
             </div>
-    </div>
-
-    <!-- About me section for my website-->
-    <div class="about" id="about">
-        <div>
-        <h2>About me:</h2>
-        <p>Hi, I'm Ayan, a B.Tech Computer Science Engineering student at VIT, Vellore, with a strong foundation in software development, finance, and logistics management. My journey is driven by a passion for problem-solving, innovation, and building scalable solutions.</br> 
-        </br>
-            I've worked on projects ranging from developing a Shopping List Management System using Object-Oriented Programming in C++ to leading procurement and vendor negotiations as the Head of Finance and Logistics at RoboVITics. As an active member of the club, I’ve contributed to flagship events like Robowars and Yantra, managed sponsorship outreach, and helped organize workshops.  </br>
-        </br> 
-            My technical expertise includes C++, Python, Java, JavaScript, React, and web development, along with hands-on experience in WordPress and Git. I also have a keen interest in software architecture, data structures, and algorithms. </br>  
-        </br>
-            Beyond coding, I’ve been a speaker at technical events and a teaching intern at Sampoorna Shiksha, where I made complex concepts accessible to young students. Whether it's leading, developing, or innovating, I bring adaptability, collaboration, and technical precision to every challenge.  
-        </br>
-            Let’s connect and create something impactful!</p>
-        <br>
-        <h2>My Skills</h2>
+          </div>
         </div>
-<!--skill   section for my website-->
-<div class="skill" id="skill">
-    <div class="skills-container">
-        <div class="skills"><h3>Programming</h3>C++, Python, Java, JavaScript</div>
-        <div class="skills_colour"><h3>Web Development</h3>HTML, CSS, React, WordPress, Git</div>
-        <div class="skills"><h3>Object-Oriented Programming</h3>Encapsulation, Inheritance, Polymorphism, Abstraction</div>
-        <div class="skills_colour"><h3>Algorithms & Data Structures</h3>Sorting, Searching, Recursion, Dynamic Programming</div>
+      </div>
     </div>
-    <div class="skills-container">
-        <div class="skills_colour"><h3>Finance & Management</h3>Logistics, Vendor Negotiation, Sponsorship Handling</div>
-        <div class="skills"><h3>Database Management</h3>MySQL Basics</div>
-        <div class="skills_colour"><h3>Event Organization</h3>Workshop Coordination, Technical Event Planning</div>
-        <div class="skills "><h3>Soft Skills</h3>Leadership, Public Speaking, Content Creation</div>
-    </div>
-</div>
-<!--project   section for my website-->
-<div class="projects" id="projects">
-    <h2><br>My Projects:</h2>
-    <div class="project-container">
-        <div class="project-card"><h3>Shopping List Management System</h3>Developed a C++ application to efficiently manage shopping lists.</div>
-        <div class="project-card"><h3>Kinetic Pavement using Piezoelectric Sensors</h3>Designed a system to generate electricity from footsteps </div>
-        <div class="project-card"><h3>Flappy Bird Game Workshop</h3>Developed a Flappy Bird game using WebGL and taught it to 120 attendees.</div>
-    </div>
-    <div class="project-container">
-        <div class="project-card"><h3>Real-time Gesture Detection</h3>Built a camera-based system to detect hand gestures using machine learning.</div>
-        <div class="project-card"><h3>Technical Event Speaker</h3>Delivered a session on technical topics at D2D, an event in VIT's technical week, Yantra.</div>
-        <div class="project-card"><h3>CA Website</h3>Developed a website for a client to boost her reach.</div>
-    </div>
-</div>
-<!--chievement section for my website-->
-<div class="achievements" id="achievements">
-    <h2>My Achievements:</h2>
-    <div class="skills-container">
-        <div class="skills_colour"><h3>Startup Founder</h3>Co-founded 'Layover,' a startup in the ideation phase focused on innovating the airport lounge system.</div>
-        <div class="skills_colour"><h3>RoboWars</h3>Volunteered in organizing RoboWars, the flagship event of VIT, ensuring event safety and coordination during GraVITas.</div>
-        <div class="skills_colour"><h3>Machine Design Workshop</h3>Managed participants, cleared doubts, and co-led a session in the premium pre-GraVITas Machine Design event.</div>
-        <div class="skills_colour"><h3>Startup Bootcamp</h3>Participated in a startup bootcamp, refining entrepreneurial skills and validating business ideas.</div>
-        <div class="skills_colour"><h3>Speaker</h3>Spoke at D2D, a session in Yantra, the technical week of VIT, sharing insights on tech and innovation.</div>
-    </div>
-</div>
+  </section>
 
-<!--contact   section for my website-->
+  <!-- 5. REWORKED ROBOVITICS & LEADERSHIP SECTION -->
+  <section id="leadership">
+    <div class="container">
+      <div class="section-header reveal-on-scroll">
+        <span class="section-tag">Leadership & Execution</span>
+        <h2 class="section-title">RoboVITics — Executive Leadership</h2>
+        <p class="section-subtitle">Demonstrated capability in managing people, financial budgets, corporate partnerships, technical automation, and national robotics event execution.</p>
+      </div>
 
-<div class="contact">
-    <div class="contact_contain">
-        <div>
-        <h2>Contact me!</h2>
-        <p>Wanna know more? Please contact me</p>
+      <!-- Progression Track -->
+      <div class="leadership-progression-wrapper reveal-on-scroll" id="leadership-progression-track">
+        <!-- Rendered dynamically -->
+      </div>
+
+      <!-- 4-Dimension Dashboard -->
+      <div class="leadership-dimensions-dashboard reveal-on-scroll">
+        <div class="dimension-tabs-bar" id="leadership-dimension-tabs" role="tablist" aria-label="Leadership dimensions">
+          <!-- Rendered dynamically -->
         </div>
-        <div>
-        <div class = "contact_card">Phone<br>+91 83699 79901</div>
-        <br>
-        <div class = "contact_card">Email<br>ayan.gattani@gmail.com</div>
-        <br>
+
+        <div id="leadership-dimension-panel">
+          <!-- Rendered dynamically -->
         </div>
+      </div>
     </div>
-</div>
+  </section>
 
+  <!-- 6. TECHNICAL SKILLS SECTION -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-header reveal-on-scroll">
+        <span class="section-tag">Technical Matrix</span>
+        <h2 class="section-title">Skills & Technologies</h2>
+        <p class="section-subtitle">Cleanly categorized skills backed by direct application in real projects.</p>
+      </div>
 
-</div>
-<!--footer section for my website-->
+      <div class="skills-categories-grid reveal-on-scroll" id="skills-categories-grid">
+        <!-- Rendered dynamically -->
+      </div>
+    </div>
+  </section>
 
-<footer>
-    <p>©2025 Ayan Gattani</p>
-</footer>
-    
+  <!-- 7. ACHIEVEMENTS / IMPACT SECTION -->
+  <section id="impact">
+    <div class="container">
+      <div class="section-header reveal-on-scroll">
+        <span class="section-tag">Measurable Impact</span>
+        <h2 class="section-title">Quantified Achievements & Operations</h2>
+        <p class="section-subtitle">Tangible metrics demonstrating execution scale across software, finance, and event management.</p>
+      </div>
 
+      <div class="impact-grid reveal-on-scroll">
+        <div class="impact-card">
+          <div class="impact-number-wrap">
+            <span class="counter-value" data-target="500" data-suffix="+">0</span>
+          </div>
+          <div class="impact-label">URLs Shortened</div>
+          <p class="impact-desc">Internal production link manager built for RoboVITics.</p>
+        </div>
 
+        <div class="impact-card">
+          <div class="impact-number-wrap">
+            <span class="counter-value" data-target="100" data-suffix="+">0</span>
+          </div>
+          <div class="impact-label">Active Internal Users</div>
+          <p class="impact-desc">Core members utilizing URL shortener & tools.</p>
+        </div>
+
+        <div class="impact-card">
+          <div class="impact-number-wrap">
+            <span class="counter-value" data-target="11" data-prefix="₹" data-suffix="L">0</span>
+          </div>
+          <div class="impact-label">Budget Managed</div>
+          <p class="impact-desc">Audited and allocated across 14 technical events.</p>
+        </div>
+
+        <div class="impact-card">
+          <div class="impact-number-wrap">
+            <span class="counter-value" data-target="8.3" data-prefix="₹" data-suffix="L" data-decimals="1">0</span>
+          </div>
+          <div class="impact-label">Sponsorships Secured</div>
+          <p class="impact-desc">Corporate sponsors: Siemens, ADI, Panasonic, Module143.</p>
+        </div>
+
+        <div class="impact-card">
+          <div class="impact-number-wrap">
+            <span class="counter-value" data-target="1400" data-suffix="+">0</span>
+          </div>
+          <div class="impact-label">Equinox Registrations</div>
+          <p class="impact-desc">National robotics fest with 450 shortlisted participants.</p>
+        </div>
+
+        <div class="impact-card">
+          <div class="impact-number-wrap">
+            <span class="counter-value" data-target="1500" data-suffix="+">0</span>
+          </div>
+          <div class="impact-label">RoboWars Footfall</div>
+          <p class="impact-desc">Spectators across 15 combat robotics teams.</p>
+        </div>
+
+        <div class="impact-card">
+          <div class="impact-number-wrap">
+            <span class="counter-value" data-target="14" data-suffix="">0</span>
+          </div>
+          <div class="impact-label">Technical Events</div>
+          <p class="impact-desc">Campus workshops, hackathons, and robotics fests.</p>
+        </div>
+
+        <div class="impact-card">
+          <div class="impact-number-wrap">
+            <span class="counter-value" data-target="7" data-suffix="">0</span>
+          </div>
+          <div class="impact-label">Backend Endpoints</div>
+          <p class="impact-desc">API endpoints serving internal link shortening tool.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. CONTACT SECTION -->
+  <section id="contact">
+    <div class="container">
+      <div class="contact-card-box reveal-on-scroll">
+        <h2 class="contact-title">Let's build something meaningful.</h2>
+        <p class="contact-subtext">
+          I am actively seeking AI/ML and Software Engineering opportunities where I can contribute to high-impact systems, backend microservices, and intelligent products.
+        </p>
+
+        <div class="contact-btn-group">
+          <button class="btn btn-primary" data-action="copy-email">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            <span>Copy Email Address</span>
+          </button>
+
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="color: #FFFFFF; border-color: rgba(255,255,255,0.2);">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+            <span>LinkedIn Profile</span>
+          </a>
+
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="color: #FFFFFF; border-color: rgba(255,255,255,0.2);">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            <span>GitHub Profile</span>
+          </a>
+        </div>
+
+        <div class="social-links-bar">
+          <span>Ayan Gattani — Computer Science Engineering</span>
+          <span>•</span>
+          <span>VIT Vellore</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <p>© 2026 Ayan Gattani. Engineered with performance & clarity.</p>
+      <a href="#hero" class="back-to-top">
+        <span>Back to Top</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16" aria-hidden="true"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+      </a>
+    </div>
+  </footer>
+
+  <!-- Dynamic Modal Overlay Container -->
+  <div id="project-modal-container"></div>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-container"></div>
+
+  <!-- Main ES Module Script -->
+  <script type="module" src="js/main.js"></script>
 </body>
 </html>
