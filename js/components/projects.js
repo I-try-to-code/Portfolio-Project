@@ -35,12 +35,28 @@ export function initProjects() {
             renderSecondaryProjects(secondaryProjects, secondaryContainer);
           }
         } else {
-          const filteredHero = heroProjects.filter(p => p.id.includes(category) || p.category.toLowerCase().includes(category));
-          const filteredSec = secondaryProjects.filter(p => p.id.includes(category) || p.category.toLowerCase().includes(category));
+          const matchesCategory = (p, cat) => {
+            const catLower = cat.toLowerCase();
+            const pCat = p.category.toLowerCase();
+            const pId = p.id.toLowerCase();
+            if (catLower === "ai-ml") {
+              return pCat.includes("ai") || pCat.includes("ml") || pCat.includes("rag") || pCat.includes("nlp") || pCat.includes("vision") || pCat.includes("learning") || pCat.includes("transformer");
+            }
+            if (catLower === "backend") {
+              return pCat.includes("backend") || pCat.includes("api") || pCat.includes("systems") || pCat.includes("rag") || pCat.includes("nlp");
+            }
+            if (catLower === "iot") {
+              return pCat.includes("iot") || pCat.includes("embedded") || pCat.includes("hardware") || pId.includes("iot") || pId.includes("breaker") || pId.includes("flood");
+            }
+            return pId.includes(catLower) || pCat.includes(catLower);
+          };
+
+          const filteredHero = heroProjects.filter(p => matchesCategory(p, category));
+          const filteredSec = secondaryProjects.filter(p => matchesCategory(p, category));
 
           renderHeroProjects(filteredHero.length > 0 ? filteredHero : heroProjects, heroContainer);
           if (secondaryContainer) {
-            renderSecondaryProjects(filteredSec.length > 0 ? filteredSec : secondaryProjects, secondaryContainer);
+            renderSecondaryProjects(filteredSec, secondaryContainer);
           }
         }
       });
