@@ -8,74 +8,68 @@ export const skillCategories = [
     id: "ai-ml",
     title: "AI & Machine Learning",
     icon: "brain",
-    description: "Core intelligent systems, computer vision, report analysis, and predictive modeling.",
+    description: "Generative AI, RAG architecture, computer vision, transformers, and deep learning pipelines.",
     skills: [
-      { name: "Python", category: "Core", projectRef: "Health Navigator AI, Real Estate AI, Price Prediction" },
-      { name: "Machine Learning", category: "Algorithms", projectRef: "House Price Prediction, Flood Warning" },
-      { name: "Deep Learning", category: "Frameworks", projectRef: "Computer Vision & Classifier Models" },
-      { name: "Computer Vision", category: "CV / OCR", projectRef: "Health Navigator AI Fracture Detection" },
-      { name: "NLP", category: "Text Mining", projectRef: "Medical Report Processing & Summaries" },
-      { name: "LLMs & Prompting", category: "Generative AI", projectRef: "Health Navigator AI Summary Layer" }
+      { name: "Python", category: "Core Language", projectRef: "Financial RAG, BANKING77, Fracture CV, Support NLP" },
+      { name: "PyTorch", category: "Deep Learning", projectRef: "Fracture Detection CV, BANKING77 Transformers" },
+      { name: "Transformers (BERT/DistilBERT)", category: "NLP Models", projectRef: "BANKING77 77-Class Intent Intelligence Engine" },
+      { name: "Computer Vision (CNNs)", category: "Vision Models", projectRef: "Fracture Detection (EfficientNet-B0 & ResNet-50)" },
+      { name: "Grad-CAM & XAI", category: "Explainable AI", projectRef: "Fracture Detection Visual Saliency Overlay" },
+      { name: "Scikit-Learn & Classical ML", category: "Algorithms", projectRef: "Customer Support Ticket Classifier (Linear SVM)" },
+      { name: "LLMs & Prompt Guardrails", category: "Generative AI", projectRef: "Financial Research RAG (Groq gpt-oss-120b)" }
+    ]
+  },
+  {
+    id: "rag-nlp",
+    title: "RAG & Advanced Information Retrieval",
+    icon: "database",
+    description: "Hybrid dense/lexical retrieval, vector databases, cross-encoder reranking, and provenance benchmarking.",
+    skills: [
+      { name: "LangChain", category: "Framework", projectRef: "Financial RAG Annual Report Ingestion" },
+      { name: "ChromaDB", category: "Vector Database", projectRef: "Financial RAG Corpus (26,488 Document Chunks)" },
+      { name: "BGE Embeddings", category: "Dense Search", projectRef: "BAAI/bge-small-en-v1.5 Semantic Vector Engine" },
+      { name: "BM25 Lexical Search", category: "Keyword Search", projectRef: "Exact Financial Figure & Code Retrieval" },
+      { name: "Reciprocal Rank Fusion (RRF)", category: "Hybrid Fusion", projectRef: "Merging Dense & Lexical Search Ranks" },
+      { name: "Cross-Encoder Reranking", category: "Reranking Engine", projectRef: "ms-marco-MiniLM-L-6-v2 Context Reranker" },
+      { name: "PyMuPDF", category: "Document AI", projectRef: "Page-level Provenance & PDF Parsing" }
     ]
   },
   {
     id: "software-engineering",
     title: "Software Engineering & Backend",
     icon: "code",
-    description: "Production REST APIs, robust backend microservices, and system architecture.",
+    description: "Production REST APIs, microservices, model serving, and object-oriented design.",
     skills: [
-      { name: "FastAPI", category: "Web Framework", projectRef: "Health Navigator AI, ML Serving APIs" },
-      { name: "Java", category: "OOP Language", projectRef: "IMMO Infotech Software Engineering" },
-      { name: "C++", category: "Systems Language", projectRef: "Embedded Systems & Algorithmic Logic" },
-      { name: "REST APIs", category: "Architecture", projectRef: "URL Shortener (7 Endpoints), Backend Services" },
-      { name: "Backend Development", category: "Systems", projectRef: "Production Web Applications" }
+      { name: "FastAPI", category: "Web Framework", projectRef: "Financial RAG API, BANKING77 Inference Microservice" },
+      { name: "REST APIs & Uvicorn", category: "Architecture", projectRef: "Production Inference & System Endpoints" },
+      { name: "Java", category: "OOP Language", projectRef: "IMMO Infotech Software Engineering Internship" },
+      { name: "C++", category: "Systems Language", projectRef: "Embedded Systems & Algorithmic Firmware" },
+      { name: "PostgreSQL & SQL", category: "Databases", projectRef: "Relational Queries & Database Indexing" }
     ]
   },
   {
-    id: "data-databases",
-    title: "Data Systems & Pipeline",
-    icon: "database",
-    description: "Relational databases, feature pipelines, structured queries, and data processing.",
+    id: "mlops-devops",
+    title: "MLOps, Experimentation & DevOps",
+    icon: "cloud",
+    description: "Systematic experiment tracking, model versioning, calibration, Docker, and CI/CD pipelines.",
     skills: [
-      { name: "PostgreSQL", category: "RDBMS", projectRef: "Health Navigator AI, Production Apps" },
-      { name: "SQL", category: "Querying", projectRef: "Database Indexing & Schema Design" },
-      { name: "Data Preprocessing", category: "Engineering", projectRef: "Production House Price Prediction" },
-      { name: "Feature Engineering", category: "ML Pipelines", projectRef: "Spatial & Temporal Feature Scoring" }
+      { name: "Weights & Biases (W&B)", category: "Experimentation", projectRef: "Fracture Detection & BANKING77 Fine-Tuning" },
+      { name: "MLflow", category: "MLOps Tracking", projectRef: "Customer Support Ticket Classifier Pipeline" },
+      { name: "Temperature Scaling & ECE", category: "Model Calibration", projectRef: "Post-Hoc Probability Calibration (1.70% ECE)" },
+      { name: "Docker & Containerization", category: "Deployment", projectRef: "Model Serving Containers & FastAPI Isolation" },
+      { name: "GitHub Actions & Git", category: "CI/CD & Version", projectRef: "Automated Workflows & Repository Control" }
     ]
   },
   {
     id: "frontend-web",
-    title: "Frontend Engineering",
+    title: "Frontend Engineering & Observability",
     icon: "layout",
-    description: "Responsive user interfaces, modular components, and web application state.",
+    description: "Interactive web applications, real-time latency monitoring, and RAG observability interfaces.",
     skills: [
-      { name: "JavaScript (ES6+)", category: "Language", projectRef: "Custom Web Applications & Portals" },
-      { name: "React", category: "UI Library", projectRef: "Interactive Web Interfaces" },
-      { name: "HTML5 & Semantic Web", category: "Structure", projectRef: "Accessible Clean Document Design" },
-      { name: "CSS3 & Modern Layouts", category: "Styling", projectRef: "Responsive Layout Systems & Animations" }
-    ]
-  },
-  {
-    id: "cloud-devops",
-    title: "Cloud, Tools & Deployment",
-    icon: "cloud",
-    description: "Version control, automated deployments, and web hosting platforms.",
-    skills: [
-      { name: "GitHub / Git", category: "Version Control", projectRef: "Code Repositories & Collaboration" },
-      { name: "Vercel", category: "Deployment", projectRef: "Frontend Application Hosting" },
-      { name: "Render", category: "Cloud Hosting", projectRef: "Python API & Backend Deployment" }
-    ]
-  },
-  {
-    id: "iot-embedded",
-    title: "IoT & Embedded Systems",
-    icon: "cpu",
-    description: "Microcontroller telemetry, hardware sensor integration, and edge intelligence.",
-    skills: [
-      { name: "ESP32", category: "Microcontroller", projectRef: "Flood Warning System, Smart Breaker" },
-      { name: "Arduino / C++ Firmware", category: "Embedded", projectRef: "Sensor Telemetry & Hardware Control" },
-      { name: "ACS712 & TRIACs", category: "Electronics", projectRef: "Smart Solid-State Circuit Breaker" },
-      { name: "Blynk IoT Cloud", category: "Telemetry UI", projectRef: "Real-time Mobile Monitoring Dashboards" }
+      { name: "JavaScript (ES6+)", category: "Language", projectRef: "BANKING77 UI, RAG Observability Dashboard" },
+      { name: "HTML5 & Semantic Markup", category: "Structure", projectRef: "Accessible & Standardized Web Design" },
+      { name: "CSS3 & Modern Layouts", category: "Styling", projectRef: "Responsive Flexbox/Grid Systems & Animations" },
+      { name: "Streamlit", category: "AI UI Framework", projectRef: "Customer Support Agent Dashboard Interface" }
     ]
   }
 ];
