@@ -260,7 +260,7 @@ export const secondaryProjects = [
     technologies: ["Node.js / Express", "Python API", "PostgreSQL", "REST API", "Admin Controls"],
     result: "500+ URLs shortened, 50+ custom/admin URLs created, actively serving 100+ RoboVITics members across 7 API endpoints.",
 
-    github: "", 
+    github: "https://github.com/I-try-to-code", 
     liveDemo: "",
 
     engineeringDecisions: [
@@ -291,7 +291,7 @@ export const secondaryProjects = [
     technologies: ["Python", "XGBoost", "Scikit-Learn", "FastAPI", "Docker", "Pydantic"],
     result: "Automated feature validation pipeline, zero data leakage, and production API serving.",
 
-    github: "", 
+    github: "https://github.com/I-try-to-code", 
     liveDemo: "",
 
     engineeringDecisions: [
@@ -316,7 +316,7 @@ export const secondaryProjects = [
     technologies: ["ESP32", "IoT Sensors", "Machine Learning", "Fog Computing", "Blynk IoT", "C++"],
     result: "<500ms emergency alert latency and deterministic rule-based edge fallback during cloud disconnects.",
 
-    github: "", 
+    github: "https://github.com/I-try-to-code", 
     liveDemo: "",
 
     engineeringDecisions: [
@@ -341,7 +341,7 @@ export const secondaryProjects = [
     technologies: ["ESP32", "ACS712 Sensor", "TRIAC Switching", "C++ / Embedded", "Blynk Cloud"],
     result: "<10ms trip isolation time and real-time cloud current telemetry.",
 
-    github: "", 
+    github: "https://github.com/I-try-to-code", 
     liveDemo: "",
 
     engineeringDecisions: [

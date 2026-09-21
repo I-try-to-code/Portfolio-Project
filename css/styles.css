@@ -1386,35 +1386,65 @@ section {
 
 .skill-pill {
   position: relative;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.35rem;
   background-color: var(--bg-surface-alt);
   border: 1px solid var(--border-color);
-  padding: 0.4rem 0.75rem;
+  padding: 0.6rem 0.85rem;
   border-radius: var(--radius-md);
   transition: all var(--transition-fast);
+  flex: 1 1 calc(50% - 0.6rem);
+  min-width: 260px;
 }
 
 .skill-pill:hover {
   border-color: var(--accent-primary);
-  background-color: var(--accent-light);
+  background-color: var(--bg-surface);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.08);
+}
+
+.skill-pill-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 0.5rem;
 }
 
 .skill-name {
-  font-size: 0.875rem;
-  font-weight: 600;
+  font-size: 0.9rem;
+  font-weight: 700;
   color: var(--text-primary);
 }
 
 .skill-tag {
   font-family: var(--font-mono);
   font-size: 0.7rem;
-  color: var(--text-muted);
+  color: var(--accent-primary);
+  background: var(--accent-light);
+  padding: 0.15rem 0.45rem;
+  border-radius: 4px;
 }
 
-.skill-pill:hover .skill-name {
+.skill-project-ref-line {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  line-height: 1.3;
+}
+
+.skill-project-ref-line svg {
   color: var(--accent-primary);
+  flex-shrink: 0;
+}
+
+.skill-project-ref-line strong {
+  color: var(--text-secondary);
+  font-weight: 600;
 }
 
 .skill-tooltip {

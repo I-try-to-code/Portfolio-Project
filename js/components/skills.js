@@ -23,9 +23,14 @@ export function initSkills() {
       <div class="skills-pill-grid">
         ${cat.skills.map(s => `
           <div class="skill-pill" data-project-ref="${s.projectRef}">
-            <span class="skill-name">${s.name}</span>
-            <span class="skill-tag">${s.category}</span>
-            <div class="skill-tooltip">${s.projectRef}</div>
+            <div class="skill-pill-top">
+              <span class="skill-name">${s.name}</span>
+              <span class="skill-tag">${s.category}</span>
+            </div>
+            <div class="skill-project-ref-line">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="11" height="11"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+              <span>Used in: <strong>${s.projectRef}</strong></span>
+            </div>
           </div>
         `).join("")}
       </div>
